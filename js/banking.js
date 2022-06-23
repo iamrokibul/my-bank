@@ -23,7 +23,7 @@ document.getElementById("deposit-btn").addEventListener("click", function(){
     // Conditionally checked 
     if(depositText){
         currentBalance.innerText = newBalanceAmount;
-    }
+    }else{alert("Please put some Deposit amount");}
 
     // Clear the deposit input value 
     depositInput.value = '';
@@ -43,7 +43,7 @@ document.getElementById("withdraw-btn").addEventListener("click", function(){
     const currentTotalWithdrawAmount = prevWithdrawAmount + newWithdrawAmount;
     if(withdrawText){
         withdrawBalance.innerText = currentTotalWithdrawAmount;
-    }
+    }else{alert("Please put some Withdraw amount");}
     
     // // Update account balance
     const currentCutBalance = document.getElementById("current-balance");
@@ -58,3 +58,5 @@ document.getElementById("withdraw-btn").addEventListener("click", function(){
     // // Clear the deposit input value 
     withdrawInput.value = '';
 });
+
+
